@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Targets the whole page */
+html, body {
+  /* Modern browsers (Firefox & newer Chrome/Edge) */
+  scrollbar-color: #269900 #e0e0e0; /* [thumb color] [track color] */
+  scrollbar-width: thin; /* auto, thin, or none */
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #269900;
+  border-radius: 6px;
+  border: 3px solid #e0e0e0; /* Creates padding effect */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #269900; /* Darker color on hover */
+}
